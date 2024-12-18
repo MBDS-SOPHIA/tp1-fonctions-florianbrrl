@@ -27,8 +27,8 @@ fun afficheFibonacci(x: Int): String {
 
 // - Ecrire une fonction qui calcule le factoriel d’un nombre x, utiliser 10 par défaut si aucun nombre n’est spécifié.
 
-fun factoriel(x: Int = 10): Int {
-    var result = 1
+fun factoriel(x: Int = 10): Long {
+    var result: Long = 1
     for (i in 1..x) {
         result *= i
     }
@@ -47,7 +47,7 @@ fun isPrime(num: Int): Boolean {
 
 fun afficheNombresPremiers(x: Int): String {
     val result = StringBuilder()
-    var i = 2
+    var i = 2 // On commence à 2 car c'est le premier nombre premier
     var count = 0
     while (count < x) {
         if (isPrime(i)) {
