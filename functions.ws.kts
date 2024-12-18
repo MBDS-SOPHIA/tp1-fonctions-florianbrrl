@@ -47,7 +47,7 @@ fun isPrime(num: Int): Boolean {
 
 fun afficheNombresPremiers(x: Int): String {
     val result = StringBuilder()
-    var i = 2 // On commence à 2 car c'est le premier nombre premier
+    var i = 2
     var count = 0
     while (count < x) {
         if (isPrime(i)) {
